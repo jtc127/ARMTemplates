@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "eastus"
+            "value": "[resourceGroup().location]"
         },
         "storageAccountName": {
-            "value": "asdfaadsfasdsdfasd"
+            "value": "[concat(uniqueString(subscription().subscriptionId),'datastore')]"
         },
         "accountType": {
             "value": "Standard_RAGRS"
