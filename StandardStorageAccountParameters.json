@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "[resourceGroup().location]"
+            "value": "EastUS"
         },
         "storageAccountName": {
-            "value": "[concat(uniqueString(subscription().subscriptionId),'datastore')]"
+            "value": "htgshrdataeastus01"
         },
         "accountType": {
             "value": "Standard_RAGRS"
