@@ -1,0 +1,32 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        
+    },
+    "variables": {
+        "templateBaseUrl":"https://github.com/jtc127/ARMTemplates",
+        "StorageAccountTemplateUrl":"concat(variables('templateBaseUrl'),'StandardStorageAccount.json')"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "StorageAccount",
+            "properties": {
+            "mode": "Incremental",
+            "templateLink": {
+                "uri":"[variables('StorageAccountTemplateUrl')]",
+                "contentVersion":"1.0.0.0"
+            },
+            "parametersLink": {
+                "uri":"",
+                "contentVersion":"1.0.0.0"
+            }
+            }
+          }
+      ],
+    "outputs": {
+
+    }
+}
