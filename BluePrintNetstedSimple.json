@@ -6,7 +6,7 @@
     },
     "variables": {
         "templateBaseUrl":"https://github.com/jtc127/ARMTemplates",
-        "StorageAccountTemplateUrl":"concat(variables('templateBaseUrl'),'StandardStorageAccount.json')"
+        "StorageAccountTemplateUrl":"concat(variables('templateBaseUrl'),'StandardStorageAccountTemplate.json')"
     },
     "resources": [
         {
