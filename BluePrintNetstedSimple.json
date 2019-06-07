@@ -4,9 +4,9 @@
     "parameters": {
     },
     "variables": {
-        "templateBaseUrl":"https://raw.githubusercontent.com/jtc127/ARMTemplates/master/",
-        "StorageAccountTemplateUrl":"[concat(variables('templateBaseUrl'),'StandardStorageAccountTemplate.json')]",
-        "StorageAccountParametersUrl":"[concat(variables('templateBaseUrl'),'StandardStorageAccountParameters.json')]"
+        "BaseUri":"https://raw.githubusercontent.com/jtc127/ARMTemplates/master/",
+        "StorageAccountTemplateUrl":"[concat(variables('BaseUri'),'StandardStorageAccountTemplate.json')]",
+        "StorageAccountParametersUrl":"[concat(variables('BaseUri'),'StandardStorageAccountParameters.json')]"
     },
     "resources": [
         {
@@ -16,11 +16,11 @@
             "properties": {
             "mode": "Incremental",
             "templateLink": {
-                "uri":"[variables('StorageAccountTemplateUrl')]",
+                "uri":"[variables('StorageAccountTemplateUri')]",
                 "contentVersion":"1.0.0.0"
             },
             "parametersLink":{
-                "uri": "[variables('StorageAccountParametersUrl')]",
+                "uri": "[variables('StorageAccountParametersUri')]",
                 "contentVersion": "1.0.0.0"
             }
             }
