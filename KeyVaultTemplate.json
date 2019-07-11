@@ -65,7 +65,7 @@
     "resources": [
         {
             "apiVersion": "2016-10-01",
-            "name": "[concat(parameters('BusinessUnit'),'vault',uniquestring(parameters('BusinessUnit'),parameters('Department'),parameters('Application')))]",
+            "name": "[concat(parameters('BusinessUnit'),'Vault',uniquestring(parameters('BusinessUnit'),parameters('Department'),parameters('Application')))]",
             "location": "[parameters('location')]",
             "type": "Microsoft.KeyVault/vaults",
             "properties": {
