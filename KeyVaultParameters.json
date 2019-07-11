@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "ClaimsAutomation2019xPOC"
+            "value": "demokeyvalutxxyyzz"
         },
         "location": {
             "value": "eastus2"
@@ -12,51 +12,7 @@
             "value": "Standard"
         },
         "accessPolicies": {
-            "value": [
-                {
-                    "objectId": "fca81219-690a-49f1-b67f-d6deadb11f6b",
-                    "tenantId": "3ea62a99-e446-48ea-b404-0ac8d9c9b14a",
-                    "permissions": {
-                        "keys": [
-                            "Get",
-                            "List",
-                            "Update",
-                            "Create",
-                            "Import",
-                            "Delete",
-                            "Recover",
-                            "Backup",
-                            "Restore"
-                        ],
-                        "secrets": [
-                            "Get",
-                            "List",
-                            "Set",
-                            "Delete",
-                            "Recover",
-                            "Backup",
-                            "Restore"
-                        ],
-                        "certificates": [
-                            "Get",
-                            "List",
-                            "Update",
-                            "Create",
-                            "Import",
-                            "Delete",
-                            "Recover",
-                            "Backup",
-                            "Restore",
-                            "ManageContacts",
-                            "ManageIssuers",
-                            "GetIssuers",
-                            "ListIssuers",
-                            "SetIssuers",
-                            "DeleteIssuers"
-                        ]
-                    }
-                }
-            ]
+            "value": []
         },
         "tenant": {
             "value": "3ea62a99-e446-48ea-b404-0ac8d9c9b14a"
