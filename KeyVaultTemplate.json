@@ -5,6 +5,15 @@
         "vaultName": {
             "type": "string"
         },
+        "BusinessUnit": {
+            "type": "string"
+        },
+        "Application": {
+            "type": "string"
+        },
+        "Department": {
+            "type": "string"
+        },        
         "location": {
             "type": "string"
         },
@@ -56,7 +65,7 @@
     "resources": [
         {
             "apiVersion": "2016-10-01",
-            "name": "[parameters('vaultName')]",
+            "name": "[concat(parameters('BusinessUnit'),'vault',uniquestring(parameters('BusinessUnit'),parameters('Department'),parameters('Application'))]",
             "location": "[parameters('location')]",
             "type": "Microsoft.KeyVault/vaults",
             "properties": {
