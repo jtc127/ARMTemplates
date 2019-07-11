@@ -3,8 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vaultName": {
-            "type": "string",
-            "defaultValue": "xxyyzzvault123"
+            "type": "string"
         },
         "location": {
             "type": "string"
