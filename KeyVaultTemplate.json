@@ -4,7 +4,7 @@
     "parameters": {
         "vaultName": {
             "type": "string",
-            "defaultValue: "xxyyzzvault123"
+            "defaultValue": "xxyyzzvault123"
         },
         "location": {
             "type": "string"
