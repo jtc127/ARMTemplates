@@ -125,5 +125,11 @@
                 "networkAcls": "[parameters('networkAcls')]"
             }
         }
-    ]
+    ],
+    "outputs": {
+        "vaultName": {
+            "type": "string",
+            "value": "[concat(parameters('BusinessUnit'),'Vault',uniquestring(parameters('BusinessUnit'),parameters('Department'),parameters('Application')))]"
+        }
+    }
 }
